@@ -15,7 +15,8 @@ class Solution
     int peakElement(int arr[], int n)
     {
        // Your code here
-       for(int i=1;i<n;i++){
+	   int i;
+       for(i=1;i<n;i++){
            if((i-1)==0){
                if(arr[i-1]>arr[i]){
                    //return i-1;
@@ -36,7 +37,7 @@ class Solution
                break;
            }
        }
-
+		return i;
     }
 };
 
